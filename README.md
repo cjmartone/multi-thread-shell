@@ -19,3 +19,13 @@ gcc -o shell shell.c
 ./shell [name of file]
 ```
 Use a plain text file for this and the shell will begin executing the commands in the file.
+
+## Using the example file
+The example.c is used to show the efficiency of this multi thread shell. It populates a script file with commands to download every wikipedia page that has two letters in the name starting with AA and ending with ZZ. Then, example.c loads the script file with commands to parse each wikipedia page and count how many times every word is used across all the pages. At the end, it displays the results of this parse.
+
+To run the example.c file, use the following commands.
+```bash
+gcc -o example example.c
+./example.c [name of the script file]
+```
+The script file is ready to go. Refer to the 'Using a script file' section to run the shell with this file.
